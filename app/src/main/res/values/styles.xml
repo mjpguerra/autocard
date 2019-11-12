@@ -7,4 +7,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="SuccessTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/greenBackground</item>
+        <item name="android:background">@color/greenBackground</item>
+    </style>
+
+    <style name="ErrorTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/redBackground</item>
+        <item name="android:background">@color/redBackground</item>
+    </style>
+
+
+
 </resources>
