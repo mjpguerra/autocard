@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Common DP -->
+    <dimen name="common_margin_start">32dp</dimen>
+    <dimen name="common_margin_end">32dp</dimen>
+
+    <!--Margin Default-->
+    <dimen name="default_marginStart">32dp</dimen>
+    <dimen name="default_marginEnd">32dp</dimen>
+    <dimen name="default_marginTop">32dp</dimen>
+
+    <!-- Splash Screen -->
+    <dimen name="tv_splash_width">442dp</dimen>
+    <dimen name="tv_splash_height">149dp</dimen>
+    <dimen name="tv_splash_text_size">90sp</dimen>
+
+    <!--Fragment_Main TextSize-->
+    <dimen name="tv_Main_Fragment_Prefix_Text">16sp</dimen>
+    <dimen name="tv_Main_Fragment_Prefix_Value">16sp</dimen>
+    <dimen name="tv_Main_Fragment_AppName">80sp</dimen>
+    <dimen name="tv_Main_Fragment_Trip_Info">25sp</dimen>
+    <dimen name="tv_Main_Fragment_Fare_Info">22sp</dimen>
+    <dimen name="tv_Main_Fragment_Fare_Price">55sp</dimen>
+    <dimen name="tv_Main_Fragment_Passenger_Warning">15sp</dimen>
+    <dimen name="tv_Main_Fragment_ShowCard_Message">25sp</dimen>
+
+    <!--Fragment_Main Margin-->
+    <dimen name="appName_marginTop">100dp</dimen>
+    <dimen name="tripName_marginTop">20dp</dimen>
+    <dimen name="fareInfo_margiTop">30dp</dimen>
+    <dimen name="warning_marginTop">40dp</dimen>
+
+    <!--Main_Activity TextSize-->
+    <dimen name="tv_Main_Line">16sp</dimen>
+    <dimen name="tv_Main_Line_Value">34sp</dimen>
+    <dimen name="tv_Main_Time_Value">33sp</dimen>
+    <dimen name="tv_Main_Date">12sp</dimen>
+
+    <!--Fragment_blocked-->
+    <dimen name="blockedCardInfo_marginTop">40dp</dimen>
+    <dimen name="blockedContactPhone_marginBottom">30dp</dimen>
+
+    <!--Image-->
+    <dimen name="image_width">200dp</dimen>
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="TextSize_150">150sp</dimen>
+    <dimen name="default_marginBottom">70dp</dimen>
+    <dimen name="numbers_keyboard_text_size">30sp</dimen>
+    <dimen name="bottom_button_height">90dp</dimen>
+</resources>

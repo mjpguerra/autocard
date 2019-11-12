@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="controller"
+            type="com.autopass.autocard.core.common.keyboards.KeyboardController"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/numbersKeyboardLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/firstLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="1"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('1')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="2"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('2')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="3"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('3')}"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="4"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('4')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="5"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('5')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="6"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('6')}"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="7"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('7')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="8"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('8')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="9"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('9')}"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourthLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text=""
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="0"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('0')}"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_delete"
+                android:text=""
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.deleteLast()}"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
