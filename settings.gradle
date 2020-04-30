@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':VLib-release-1.0'
 rootProject.name='AutoCard'

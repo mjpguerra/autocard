@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:VLib-release-1.0:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/VLib-release-1.0/build/.transforms/2684bac01cfc94383876ce3c4be907a6/VLib-release-1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/VLib-release-1.0/build/.transforms/2684bac01cfc94383876ce3c4be907a6/VLib-release-1.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

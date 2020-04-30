@@ -3,6 +3,7 @@ package com.autopass.autocard
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
+import com.autopass.autocard.di.NfcControllerModule
 import com.autopass.autocard.di.PresenterModule
 import com.autopass.autocard.repository.di.DatabaseModule
 import com.autopass.autocard.repository.di.RepositoryModule
@@ -35,7 +36,8 @@ class AutocardApp : Application() {
             modules(
                 DatabaseModule.modules +
                         RepositoryModule.modules +
-                        PresenterModule.modules
+                        PresenterModule.modules +
+                        NfcControllerModule.modules
             )
         }
     }

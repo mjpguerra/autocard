@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.autopass.autocard.presentation.answers.AnswerPresenter"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/answerLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivFeedback"
+                android:layout_height="250dp"
+                android:layout_width="250dp"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/tvAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_margin_start"
+                android:layout_marginEnd="@dimen/common_margin_end"
+                android:text="@{presenter.title}"
+                android:layout_marginTop="40dp"
+                android:textSize="62sp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textAlignment="center"
+                android:textColor="@color/pureWhiteColor"/>
+
+            <TextView
+                android:id="@+id/tvAnswerMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_margin_start"
+                android:layout_marginEnd="@dimen/common_margin_end"
+                android:text="@{presenter.message}"
+                android:textSize="30sp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textAlignment="center"
+                android:textColor="@color/pureWhiteColor"
+                android:paddingStart="@{presenter.dipValue}"
+                android:paddingEnd="@{presenter.dipValue}"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

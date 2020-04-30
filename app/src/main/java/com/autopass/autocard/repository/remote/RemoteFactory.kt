@@ -1,5 +1,7 @@
 package com.autopass.autocard.repository.remote
 
-interface RemoteFactory {
+import com.autopass.autocard.repository.remote.passenger.resources.RemotePassengerResources
 
+interface RemoteFactory {
+    val passenger: RemotePassengerResources
 }

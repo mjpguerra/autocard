@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="controller"
+            type="com.autopass.autocard.core.common.keyboards.KeyboardController"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/numbersKeyboardLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/firstLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="0"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('0')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="1"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('1')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="2"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('2')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="3"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('3')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="4"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('4')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="5"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('5')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="6"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('6')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="7"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('7')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="8"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('8')}"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="9"
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.input('9')}"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('Q')}"
+                android:text="Q"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('W')}"
+                android:text="W"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('E')}"
+                android:text="E"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('R')}"
+                android:text="R"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('T')}"
+                android:text="T"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('Y')}"
+                android:text="Y"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('U')}"
+                android:text="U"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('I')}"
+                android:text="I"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('O')}"
+                android:text="O"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('P')}"
+                android:text="P"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="right|center_vertical"
+                android:onClick="@{_ -> controller.input('A')}"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:text="A"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('S')}"
+                android:text="S"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('D')}"
+                android:text="D"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('F')}"
+                android:text="F"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('G')}"
+                android:text="G"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('H')}"
+                android:text="H"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('J')}"
+                android:text="J"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('K')}"
+                android:text="K"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="left|center_vertical"
+                android:onClick="@{_ -> controller.input('L')}"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:text="L"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourthLineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('Z')}"
+                android:text="Z"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('X')}"
+                android:text="X"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('C')}"
+                android:text="C"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('V')}"
+                android:text="V"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('B')}"
+                android:text="B"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('N')}"
+                android:text="N"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:onClick="@{_ -> controller.input('M')}"
+                android:text="M"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColorVar2"
+                android:textSize="@dimen/numbers_keyboard_text_size" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:background="@android:color/transparent"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_delete"
+                android:text=""
+                android:textSize="@dimen/numbers_keyboard_text_size"
+                android:textColor="@color/whiteColorVar2"
+                android:gravity="center"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:onClick="@{_ -> controller.deleteLast()}"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

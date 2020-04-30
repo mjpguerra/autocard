@@ -25,11 +25,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/registerLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
         tools:context=".presentation.splash.SplashActivity"
      >
-
-
 
         <TextView
             android:id="@+id/tvAskForToken"
@@ -39,8 +38,8 @@
             android:textAlignment="center"
             android:layout_marginTop="70dp"
             android:textColor="@color/commonTextColor"
-            android:text="Grave um cartao"
-            android:textSize="35sp"
+            android:text="Imprimir cartão"
+            android:textSize="45sp"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -51,8 +50,8 @@
             android:textAlignment="center"
             android:layout_marginTop="70dp"
             android:textColor="@color/commonTextColor"
-            android:text="Para iniciar, digite o CPF do ususario"
-            android:textSize="20sp"
+            android:text="Insira o CPF ou Passaporte do usuário"
+            android:textSize="30sp"
             app:layout_constraintTop_toTopOf="@id/tvAskForToken" />
 
         <RelativeLayout
@@ -67,15 +66,17 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="24dp"
-                android:layout_alignEnd="@+id/etToken"
+                android:layout_alignEnd="@+id/etCPF"
                 android:layout_marginBottom="12dp"
                 android:layout_marginTop="12dp"
-                android:layout_alignBottom="@+id/etToken"
-                android:layout_alignTop="@+id/etToken"
-                android:background="@drawable/ic_x_light" />
+                android:layout_alignBottom="@+id/etCPF"
+                android:layout_alignTop="@+id/etCPF"
+                android:background="@drawable/ic_x_light"
+                android:onClick="@{_ -> presenter.keyboard.clear()}"
+                android:visibility="@{presenter.keyboard.hasInput ? View.VISIBLE : View.GONE, default=gone}"/>
 
             <EditText
-                android:id="@+id/etToken"
+                android:id="@+id/etCPF"
                 android:padding="8dp"
                 android:paddingStart="32dp"
                 android:paddingEnd="32dp"
@@ -87,16 +88,17 @@
                 android:textColor="@color/colorAccent"
                 android:textAlignment="textStart"
                 android:textSize="50sp"
-                android:maxLength="6"
+                android:maxLength="15"
                 android:fontFamily="@font/source_sans_pro_light"
                 android:inputType="number"
+                android:text="@{presenter.keyboard.text}"
                 android:focusable="false" />
         </RelativeLayout>
 
         <include
 
             android:id="@+id/registerKeyboard"
-            layout="@layout/numeric_keyboard_layout"
+            layout="@layout/alphanumerc_keyboard_layout"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:layout_margin="40dp"
@@ -106,6 +108,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
             bind:controller="@{presenter.keyboard}" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/commonTextColor"/>
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:background="@drawable/button_background"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:drawableTint="@color/commonTextColor"
+                android:fontFamily="@font/source_sans_pro_semi_bold"
+                android:text="@string/confirm"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:paddingRight="@dimen/default_marginStart"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/commonTextColor"
+                android:textAlignment="viewEnd"
+                android:layout_marginTop="-1dp"
+                android:onClick="@{_ -> presenter.passengerCardData()}"/>
+        </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

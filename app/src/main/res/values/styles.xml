@@ -7,4 +7,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="SuccessTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/greenBackground</item>
+        <item name="android:background">@color/greenBackground</item>
+    </style>
+
+    <style name="ErrorTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/redBackground</item>
+        <item name="android:background">@color/redBackground</item>
+    </style>
+
+    <style name="Buttom_Panel_Operation" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/button_rectangle</item>
+    </style>
+
+
+
 </resources>

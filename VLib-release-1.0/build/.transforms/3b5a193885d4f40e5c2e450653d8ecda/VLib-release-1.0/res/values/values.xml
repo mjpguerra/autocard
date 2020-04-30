@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <string name="EMV_CARD_DETECTED">Cartão EMV Detectado. Realizando Transação...</string>
+    <string name="PROPRIETARY_CARD_DETECTED">Cartão Proprietário Detectado. Realizando Transação...</string>
+    <string name="RES_CLOSE_NEGATIVE">EMV - VLIB_Close returned negative value</string>
+    <string name="RES_CLOSE_NOK">EMV - VLIB_Close returned NOK bit</string>
+    <string name="RES_OPEN_NEGATIVE">\"EMV - VLIB_Open returned negative value</string>
+    <string name="RES_OPEN_NOK">EMV - VLIB_Open returned NOK bit</string>
+    <string name="RES_TRANSACTION_OK">Transação concluída com sucesso. Retire o cartão.</string>
+    <string name="SHOW_CARD">Apresente o Cartão</string>
+    <string name="VLIB_INIT">Inicializando VLib</string>
+    <string name="app_name">VLIB</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AutoCard</string>
+
+    <string name="completed_dots">Concluído!</string>
+    <string name="error">Erro!</string>
+    <string name="confirm">Avançar</string>
+    <string name="msg_passenger_block">Neste modo, o passageiro não\n consegue embarcar</string>
+
 </resources>

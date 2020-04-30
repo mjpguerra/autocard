@@ -22,13 +22,14 @@ android {
         debug {
             debuggable true
             buildConfigField("String", "SHARED_PREFERENCES_FILE_NAME", SHARED_PREFERENCES_FILE_NAME)
+            buildConfigField("String", "THEMOVIE_URL", THEMOVIE_URL)
         }
 
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             buildConfigField("String", "SHARED_PREFERENCES_FILE_NAME", SHARED_PREFERENCES_FILE_NAME)
-
+            buildConfigField("String", "THEMOVIE_URL", THEMOVIE_URL)
         }
     }
 
@@ -123,4 +124,6 @@ dependencies {
 
     //RecyclerView
     implementation "com.android.support:recyclerview-v7:$recyclerview_version"
+
+    implementation project(path: ':VLib-release-1.0')
 }
